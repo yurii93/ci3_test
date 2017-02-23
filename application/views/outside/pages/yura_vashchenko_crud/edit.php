@@ -25,10 +25,10 @@
         <div class="form-group">
             <label for="groups">Group</label>
             <select class="form-control" name="groups[]" multiple id="groups" size="2">
-                <?php foreach ($groups as $group) : ?>
+                <?php foreach ($groups as $group) { ?>
                     <option
-                        value="<?= $group['id'] ?>" <?php if (in_array($group['name'], $groups_array)) echo "selected"; ?>><?= $group['name'] ?></option>
-                <?php endforeach; ?>
+                        value="<?= $group['id']; ?>" <?php if (in_array($group['name'], $groups_array)) echo "selected"; ?>><?= $group['name']; ?></option>
+                <?php } ?>
             </select>
         </div>
         <br><br>

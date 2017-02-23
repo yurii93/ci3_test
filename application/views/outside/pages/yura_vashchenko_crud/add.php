@@ -23,9 +23,9 @@
             <div class="form-group">
                 <label for="groups">Group</label>
                 <select class="form-control" name="groups[]" multiple size="1" id="groups">
-                    <?php foreach ($groups as $group) : ?>
-                        <option value="<?= $group['id'] ?>"><?= $group['name'] ?></option>
-                    <?php endforeach; ?>
+                    <?php foreach ($groups as $group) { ?>
+                        <option value="<?= $group['id']; ?>"><?= $group['name']; ?></option>
+                    <?php } ?>
                 </select>
             </div>
         <?php endif; ?>
